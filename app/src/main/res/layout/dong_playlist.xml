@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <androidx.cardview.widget.CardView
+      android:id="@+id/cardviewplaylist"
+      android:layout_margin="5dp"
+      app:cardCornerRadius="10dp"
+      android:layout_width="match_parent"
+      android:layout_height="110dp">
+  <ImageView
+      android:id="@+id/imageviewbackgroupplaylist"
+      android:scaleType="fitXY"
+      android:layout_width="match_parent"
+      android:layout_height="110dp"/>
+
+    <ImageView
+        android:layout_alignBottom="@id/cardviewplaylist"
+        android:layout_marginTop="40dp"
+        android:elevation="6dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/imageviewplaylist"
+        android:layout_width="70dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:textSize="13dp"
+        android:text="Những bài hát hot của ca sĩ"
+        android:layout_marginLeft="108dp"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:id="@+id/textviewtenplaylist"
+        android:maxLines="1"
+        android:layout_marginTop="57dp"
+        android:ellipsize="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+  </androidx.cardview.widget.CardView>
+</RelativeLayout>

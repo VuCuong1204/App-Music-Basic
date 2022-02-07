@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewbanner"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imageviewbackgroundbanner"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_marginTop="120dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardviewanhbaihat"
+            android:layout_width="70dp"
+            android:gravity="center"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="10dp">
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/imageviewbanner"
+                android:layout_width="70dp"
+                android:layout_height="70dp" />
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:id="@+id/textviewtitlebannerbaihat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/cardviewanhbaihat"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/cardviewanhbaihat"
+            android:text="Lo yeu mat roi"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textviewtitlebannerbaihat"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/cardviewanhbaihat">
+
+            <TextView
+                android:id="@+id/textviewnoidung"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="40dp"
+                android:maxLines="2"
+                android:text="Chao ban den voi ca khuc moi nhat hien nay"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
